@@ -1,0 +1,3 @@
+postgre_container: /home/ec2-user/nodejs
+container_name: rabia_nodejs
+image_name: jupiterisland/nodejs

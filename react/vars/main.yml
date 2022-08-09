@@ -1,0 +1,3 @@
+postgre_container: /home/ec2-user/react
+container_name: rabia_react
+image_name: jupiterisland/react

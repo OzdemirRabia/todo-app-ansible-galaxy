@@ -1,0 +1,3 @@
+postgre_container: /home/ec2-user/postgresql
+container_name: rabia_postgre
+image_name: jupiterisland/postgre

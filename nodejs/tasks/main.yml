@@ -1,14 +1,3 @@
-- name: Nodejs Server configuration
-  hosts: _ansible_nodejs
-  become: true
-  gather_facts: No
-  any_errors_fatal: true
-  vars: 
-    nodejs_home: /home/ec2-user/ansible-project/nodejs
-    container_path: /home/ec2-user/nodejs
-    container_name: cla_nodejs
-    image_name: clacw/nodejs
-  tasks:
     - name: create build directory
       file:
         path: "{{ container_path }}"

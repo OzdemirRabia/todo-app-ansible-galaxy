@@ -1,14 +1,3 @@
-- name: Postgre Database configuration
-  hosts: _ansible_postgresql
-  become: true
-  gather_facts: No
-  any_errors_fatal: true
-  vars: 
-    postgre_home: /home/ec2-user/ansible-project/postgres
-    postgre_container: /home/ec2-user/postgresql
-    container_name: cla_postgre
-    image_name: clacw/postgre
-  tasks:
     - name: create build directory
       file:
         path: "{{ postgre_container }}"

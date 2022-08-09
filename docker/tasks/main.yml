@@ -1,9 +1,3 @@
-- name: Docker install and configuration
-  gather_facts: No
-  any_errors_fatal: true
-  hosts: _development
-  become: true
-  tasks:
     - name: upgrade all packages
       yum: 
         name: '*'
